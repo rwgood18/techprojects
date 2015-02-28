@@ -41,7 +41,6 @@ body {
     margin-left: auto;
     text-align: left;
     cursor: pointer;
-    border: 1px solid #f6f0e4;
 }
 
 .sub-menu {
@@ -58,20 +57,37 @@ body {
     display: block;
 }
 
+.side-link {
+    padding-left: 10px;
+    color: black;
+}
+
 .side-bar {
-    margin-top: 40px;
-    padding-top: 30px 0px 0px 0px;
+    margin-top: 20px;
+    padding: 0px 0px 0px 0px;
     border: 1px solid #f6f0e4;
     background-color: #6699CC;
     height: 100vh;
 }
 
-tbody.side-bar td {
-       border: 1px solid #f6f0e4;
+.side-list {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 20px 0px 0px;
+    border: 1px solid white;
+    line-height: 3em;
 }
 
-tbody.side-bar tr:hover {
-    background: #fff;
+.side-list:hover {
+    background: #E0E0E0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .blue-text {
