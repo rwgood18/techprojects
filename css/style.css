@@ -8,6 +8,7 @@ body {
     background: -moz-linear-gradient(#D8D8D8, white);
     background: linear-gradient(#D8D8D8, white);
 }
+
 .top {
     background: #909090;
     padding: 1.5em;
@@ -18,6 +19,7 @@ body {
 }
 
 .title {
+    margin-bottom: .3em;
     padding: .4em;
     width: 27%;
     background: #6699CC;
@@ -38,17 +40,13 @@ body {
     background-color: #E0E0E0;
 }
 
-.projects-title {
-    color: #337ab7;
-}
-
 .main-content {
     padding: 12px 12px 12px 12px;
     margin-left: auto;
     margin-right: auto;
     width: 58.33333333%;
     background-color: white;
-    height: 100%;
+    min-height: 47em;
     font-size: 12px;
 }
 
@@ -62,17 +60,16 @@ body {
     width: 100%;
 }
 
-#nav b {
-    display: table-cell;
+#nav div {
     width: 20%;  /* (100 / numItems)% */
     text-align: center;
     white-space: nowrap;
 }​
 
 .drop-menu {
-    display: block;
     margin-right: auto;
     margin-left: auto;
+    padding: 50px;
     cursor: pointer;
 }
 
@@ -85,11 +82,26 @@ body {
     margin-top: 10px;
     text-align: left;
     border: 1px solid #fff;
-    position:relative;
+    position: absolute;
     z-index: 10;
 }
 
-.drop-menu:hover .sub-menu {
+#dummy {
+    display: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#dummy:hover .sub-menu {
+    display: block;
+}
+
+#dummy:hover .bg-success {
+    background: blue;
+}
+
+
+.sub-menu:hover .sub-menu {
     display: block;
 }
 
@@ -140,4 +152,12 @@ ul {
     -webkit-box-shadow: 0px 13px 25px rgba(0,0,0, 0.2);
     -moz-box-shadow: 0px 13px 25px rgba(0,0,0, 0.2);
     box-shadow: 0px 13px 25px rgba(0,0,0, 0.2);
+}
+
+.server-ul {
+    margin-left: 40px;
+}
+
+.border-radius {
+    border-radius: 10px;
 }
