@@ -3,12 +3,27 @@ body {
     font-size: 14px;
     line-height: 1.61;
     font-weight: 400;
-    background: -webkit-linear-gradient(#99CCFF, #E0E0E0); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#99CCFF, #E0E0E0); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#99CCFF, #E0E0E0); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#99CCFF, #E0E0E0); /* Standard syntax */
+    background: -webkit-linear-gradient(#D8D8D8, white);
+    background: -o-linear-gradient(#D8D8D8, white);
+    background: -moz-linear-gradient(#D8D8D8, white);
+    background: linear-gradient(#D8D8D8, white);
+}
+.top {
+    background: #909090;
+    padding: 1.5em;
+    background: -webkit-linear-gradient(#99CCFF, #E0E0E0);
+    background: -o-linear-gradient(#99CCFF, #E0E0E0);
+    background: -moz-linear-gradient(#99CCFF, #E0E0E0);
+    background: linear-gradient(#99CCFF, #E0E0E0);
 }
 
+.title {
+    padding: .4em;
+    width: 27%;
+    background: #6699CC;
+    border-radius: 10px;
+    font-size: 30px;
+}
 
 .hero {
     padding: 2em;
@@ -22,6 +37,11 @@ body {
     padding: 20px 0px 20px 0px;
     background-color: #E0E0E0;
 }
+
+.projects-title {
+    color: #337ab7;
+}
+
 .main-content {
     padding: 12px 12px 12px 12px;
     margin-left: auto;
@@ -29,17 +49,30 @@ body {
     width: 58.33333333%;
     background-color: white;
     height: 100%;
+    font-size: 12px;
 }
+
 .li-item {
     font-size: .9em; 
     font-style: italic;
 }
 
+#nav {
+    display: table;
+    width: 100%;
+}
+
+#nav b {
+    display: table-cell;
+    width: 20%;  /* (100 / numItems)% */
+    text-align: center;
+    white-space: nowrap;
+}​
+
 .drop-menu {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    text-align: left;
     cursor: pointer;
 }
 
@@ -50,7 +83,10 @@ body {
     padding: 10px 10px;
     margin-left: -11px;
     margin-top: 10px;
+    text-align: left;
     border: 1px solid #fff;
+    position:relative;
+    z-index: 10;
 }
 
 .drop-menu:hover .sub-menu {
@@ -67,9 +103,16 @@ body {
     padding: 0px 0px 0px 0px;
     border: 1px solid #f6f0e4;
     background-color: #6699CC;
-    height: 100vh;
+    height: auto;
 }
 
+.side-bar-title {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 10px;
+    border: 1px solid white;
+    line-height: 3em;
+    background: #6699CC;
+}
 .side-list {
     margin: 0px 0px 0px 0px;
     padding: 0px 20px 0px 0px;
