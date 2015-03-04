@@ -12,6 +12,7 @@ body {
 .top {
     background: #909090;
     padding: 1.5em;
+    text-align: left;
     background: -webkit-linear-gradient(#99CCFF, #E0E0E0);
     background: -o-linear-gradient(#99CCFF, #E0E0E0);
     background: -moz-linear-gradient(#99CCFF, #E0E0E0);
@@ -40,6 +41,8 @@ body {
     background-color: #E0E0E0;
 }
 
+.slides {
+}
 .main-content {
     padding: 12px 12px 12px 12px;
     margin-left: auto;
@@ -111,7 +114,7 @@ body {
 }
 
 .side-bar {
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 0px 0px 0px 0px;
     border: 1px solid #f6f0e4;
     background-color: #6699CC;
@@ -127,7 +130,7 @@ body {
 }
 .side-list {
     margin: 0px 0px 0px 0px;
-    padding: 0px 20px 0px 0px;
+    padding: 0px 5px 0px 0px;
     border: 1px solid white;
     line-height: 3em;
 }
@@ -160,4 +163,21 @@ ul {
 
 .border-radius {
     border-radius: 10px;
+}
+
+#cat-list {
+    display: none;
+    padding-top: 20px;
+}
+
+.portfolio-link {
+    color: black;
+}
+
+.portfolio-link:hover {
+    background: #E0E0E0;
+}
+
+.center {
+    text-align: center;
 }
