@@ -1,0 +1,30 @@
+<html>
+	<head>
+	<meta name="viewport" content="initial-scale=1">
+	</head>
+	<body style="display: block; font-family: Arial;">
+		<h1 style="text-align: center;">Cat Clicker Premium</h1>
+		<div style="float: left; max-width: 10%; margin-left: 2%;">
+			<ul id="list"></ul>
+		</div>
+		<div style="max-width: 85%;  margin-top: 90px; font-size: 40px; display: block; text-align: center; margin-left: auto; margin-right: auto;">
+			<p  id="cat">
+				<img id="cat_img" class="img" style=" float: right; max-width: 55%;" src="" alt="Cute Cat">
+				<counter id="count" style=" font-size: 40px; "></counter>
+				<div id="name" style="font-size: 40px;"></div>		
+			<script src="app.js"></script>
+		</div>
+		<div style="margin-top: 100px">
+			<input type="submit" value="Admin" onClick="adminView.init()">
+				<div id="parameters" style="margin-top: 20px; display: none;">
+					<form>
+					Cat Name: <input type="text" id="cat_name" value=""><br>
+					Image URL: <input type="text" id="cat_url" value=""><br>
+					Clicks: <input type="text" id="cat_clicks" value=""><br>
+					</form>
+					<input type="submit" value="Save" onClick="adminView.save()">
+					<input type="submit" value="Cancel" onClick="adminView.cancel()">
+				</div>
+		</div>
+	</body>
+</html>

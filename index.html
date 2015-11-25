@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/title-image.ico" type="image/x-icon" />
+    <title>Tech Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+	<div class="caution hide">
+		Sorry, this site is still under construction.<br>
+		<button data-bind="click: enter">Enter Anyway</button>  or  
+		<button data-bind="click: enter">Go Back(Enter Anyway)</button>
+	</div>
+		<div class="top">
+			<div class="page-header">
+				<div class="title shadow border-radius">Techprojects.ddns.com</div>
+			</div>
+			<dfn>Frontend Web Development by Rusty Good</dfn>
+		</div>
+		<div class="container">
+			<div class="bg-success row">
+				<div id="nav" class="wide">
+					<div id="dummy" class="left">
+						<b  class="drop-menu"><a href="index.html">Home</a>
+							<ul class="sub-menu shadow">
+								<a href="education.html">Education & Training</a><br>
+								<a href="server.html">About This Server</a><br>
+								<a href="info.html">Contact Info</a>
+							</ul>
+						</b>
+					</div>
+					<div id="dummy" class="left">
+						<b class="drop-menu"><a href="education.html">Education & Training</a>
+							<ul class="sub-menu shadow">
+								<a href="education.html">Udacity.com</a><br>
+								<a href="education.html">The Institue of Audio Engineering Arts</a>
+							</ul>
+						</b>
+					</div>
+					<div id="dummy" class="left">
+						<b class="drop-menu">
+							<a href="server.html">About This Server</a>
+						</b>
+					</div>
+					<div id="dummy" class="left two">
+						<b class="drop-menu"><a href="info.html">Contact Info</a>
+							<ul class="sub-menu shadow">
+								<a href="info.html">Contact Information</a><br>
+								<a href="info.html">Resume</a>
+							</ul>
+						</b>
+					</div>
+				</div>			
+			</div>
+		</div>
+		<div class="container table">
+			<div class="row body">
+				<div class="left side-bar shadow">
+					<ul>
+						<li class="side-bar-title"><b>UDACITY PROJECTS</b></li>				
+						<li id="p1" data-bind="event: { mouseover: function () {changeSlide(0) }}" class="side-list transition pointer"><a href="page-mock/index.html" class="side-link">Mock Up to Website</a></li>
+						<li id="p2" data-bind="event: { mouseover: function () {changeSlide(1) }}" class="side-list transition pointer"><a href="resume/index.html" class="side-link">Interactive Resume</a></li>
+						<li id="p3" data-bind="event: { mouseover: function () {changeSlide(2) }}" class="side-list transition pointer"><a href="game/game.html" class="side-link">Classic Arcade Game Clone</a></li>
+						<li id="p4" data-bind="event: { mouseover: function () {changeSlide(3) }}" class="side-list transition pointer"><a href="web-opto/index.html" class="side-link">Website Optomization</a></li>
+						<li id="p5" data-bind="event: { mouseover: function () {changeSlide(4) }}" class="side-list transition pointer"><a href=" http://rwgood18.github.io/neighborhood-map" class="side-link">Neighborhood Map Project</a></li>
+						<li id="p6" data-bind="event: { mouseover: function () {changeSlide(5) }}" class="side-list transition pointer"><a href="education.html" class="side-link">Feed Reader Testing</a></li>
+						<li class="side-bar-title"><b>JAVASCRIPT LIBRARIES</b></li>
+						<li class="side-list transition pointer"><div href="education.html" class="side-link">jQuery</div></li>
+						<li class="side-list transition pointer"><div href="education.html" class="side-link">Knockout</div></li>
+					</ul>
+				</div>
+					<img id="slides" class="left img-responsive" src="img/arcade-game.png">	
+				<div class="left shadow" style="width: 270px">
+					<h2>My Projects</h2>
+		            <ul>
+		                <li class="main-list">
+		                	<div class="modal-header">
+		                    	<img class="index-images" src="img/drumset.jpg">
+		                    	<a href="studio.html">In the Studio</a>
+		                    </div>
+		                    <p class="li-item">Recording at BRC Audio Productions</p>
+		                </li>
+		                <li id="cat-clicker" class="main-list pointer">
+			                <div class="modal-header">
+			                    <img  class="index-images" src="img/kitty.jpg">
+			                    <a data-bind="click: catShow">Cat Clicker</a>
+			                </div> 
+			                <p class="li-item">Three different versions of Cat Clicker</p>
+		                	<ul id="cat-list" class="hide">
+		                		<li><a href="cat-clicker/cat_clicker_basic/index.html">Cat Clicker Basic</a></li>
+		                		<li><a href="cat-clicker/cat_clicker_premium/index.html">Cat Clicker Premium</a></li>
+		                		<li><a href="cat-clicker/cat_clicker_premium_pro/index.html">Cat Clicker Premium Pro</a></li>
+		                	</ul>
+		                </li>
+		                <li class="main-list">
+		                    <div class="modal-header">	
+		                    	<img class="index-images" src="img/soundcloud.jpg">
+		                    	<a href="http://www.soundcloud.com/syntax-sugar">Original Music by Rusty Good</a> 
+		                    </div>
+		                    <p class="li-item">See what I've been up to lately on Soundcloud</p>
+		                </li>
+		            </ul>
+	            </div>
+			</div>
+		</div> 
+		<script src='js/lib/knockout-3.2.0.js'></script>
+    	<script src="js/main.js"></script>
+</body>
+</html>
