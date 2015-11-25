@@ -1,0 +1,3 @@
+Here is a link to my version of Cameron's portfolio http://rwgood18.github.io/frontend-nanodegree-mobile-portfolio/
+
+To optomize the load speed of index.html, I eliminated all render blocking CSS and JavaScript. I moved css into the head of index.html and loaded scripts asyncronously.  To optomize the frame rate of pizza.html, I eliminated unnecessary code from main.js. This included for loops and an all around poor implementation of JavaScript.  For resizePizzas(), I used transform-scale(x,y) to avoid recalculating layout. For updatePositions(), I used requestAnimationFrame to call it and transform-translateX(x) to do the actual movement.
